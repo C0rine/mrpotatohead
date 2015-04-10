@@ -40,11 +40,11 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize body of mr potato head and set it to VISIBLE
+        // Initialize body of mr potato head and set it to VISIBLE.
         body = (ImageView) findViewById(R.id.body);
         body.setVisibility(View.VISIBLE);
 
-        // Initialize all other bodyparts and set these to INVISIBLE
+        // Initialize all other bodyparts and set these to INVISIBLE.
         arms = (ImageView) findViewById(R.id.arms);
         arms.setVisibility(View.INVISIBLE);
 
@@ -99,7 +99,7 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    // make arms appear when arms checkbox is checked, make then disappear when unchecked
+    // Make arms appear when arms checkbox is checked, make then disappear when unchecked.
     public void onCheckingArms(View view){
 
         if (arms.getVisibility() == view.INVISIBLE){
@@ -112,7 +112,7 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    // repeat for all other bodyparts...
+    // Repeat for all other bodyparts...
 
     public void onCheckingEars(View view){
 
