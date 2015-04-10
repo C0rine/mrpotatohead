@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title"
-            android:id="@+id/textView"
+            android:id="@+id/title"
             android:textSize="30sp"
             android:layout_gravity="center_horizontal" />
 
@@ -55,6 +55,14 @@
                 android:layout_centerHorizontal="true"
                 android:id="@+id/hat"
                 android:src="@mipmap/hat"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/eyebrows"
+                android:src="@mipmap/eyebrows"
                 />
 
             <ImageView
@@ -105,6 +113,7 @@
                 android:src="@mipmap/ears"
                 />
 
+
         </RelativeLayout>
 
         <GridLayout
@@ -120,6 +129,7 @@
                 android:id="@+id/checkEyes"
                 android:layout_row="0"
                 android:layout_column="0"
+                android:onClick="onCheckingEyes"
                 />
 
             <CheckBox
@@ -128,7 +138,8 @@
                 android:text="Ears"
                 android:id="@+id/checkEars"
                 android:layout_row="1"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:onClick="onCheckingEars"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -137,7 +148,8 @@
                 android:id="@+id/checkShoes"
                 android:layout_gravity="bottom"
                 android:layout_row="2"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:onClick="onCheckingShoes"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -146,7 +158,8 @@
                 android:id="@+id/checkArms"
                 android:layout_gravity="bottom"
                 android:layout_row="3"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:onClick="onCheckingArms"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -155,7 +168,8 @@
                 android:id="@+id/checkMouth"
                 android:layout_gravity="bottom"
                 android:layout_row="4"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:onClick="onCheckingMouth"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -164,7 +178,8 @@
                 android:id="@+id/checkEyebrows"
                 android:layout_gravity="bottom"
                 android:layout_row="0"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:onClick="onCheckingEyebrows"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -173,7 +188,8 @@
                 android:id="@+id/checkGlasses"
                 android:layout_gravity="bottom"
                 android:layout_row="1"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:onClick="onCheckingGlasses"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -182,7 +198,8 @@
                 android:id="@+id/checkHat"
                 android:layout_gravity="bottom"
                 android:layout_row="2"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:onClick="onCheckingHat"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -191,7 +208,8 @@
                 android:id="@+id/checkMustache"
                 android:layout_gravity="bottom"
                 android:layout_row="3"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:onClick="onCheckingMustache"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -200,7 +218,8 @@
                 android:id="@+id/checkNose"
                 android:layout_gravity="bottom"
                 android:layout_row="4"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:onClick="onCheckingNose"/>
 
         </GridLayout>
 
